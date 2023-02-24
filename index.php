@@ -283,7 +283,7 @@ if (isset($_POST["send_message"])) {
     <? } ?>
     <section class="uk-section uk-section-large uk-section-secondary">
         <div class="uk-container uk-container-small uk-text-center">
-            <h3>Technology I Use</h3>
+            <h3>Technology We Use</h3>
             <div class="text-xxl uk-text-center" style="letter-spacing: 0.4em">
                 <em class="devicon-jquery-plain colored  "></em>
                 <em class="devicon-php-plain colored "></em>
