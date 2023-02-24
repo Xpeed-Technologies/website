@@ -34,13 +34,13 @@ if (isset($_POST["send_message"])) {
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 
-    <link rel="icon" href="assets/images/n..svg">
+    <link rel="icon" href="assets/images/logo.png">
 
     <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-    <title>Nafish Ahmed - Full Stack Developer(ReactJS, ExpressJS & MySQL)</title>
+    <title>Xpeed Technologies - Full stack software development company(NodeJS, AngularJS, ReactJS, ExpressJS, MySQL, MongoDB and so on.)</title>
 </head>
 
 <body class="body">
@@ -70,8 +70,8 @@ if (isset($_POST["send_message"])) {
             <div class="uk-margin-top">
 
 
-                <a class="uk-button uk-button-primary" href="http://resume.nafish.me" target="_blank">
-                    Download My Resume
+                <a class="uk-button uk-button-primary" onclick="document.querySelector('#section-1').scrollIntoView()">
+                    Our Works
                     <span uk-icon="arrow-down"></span>
                 </a>
             </div>
@@ -193,13 +193,13 @@ if (isset($_POST["send_message"])) {
 
     $section_class = ["uk-section-primary", "uk-section-secondary"];
     $x = 0;
-    foreach ($projects as $project) {
+    foreach ($projects as $i=>$project) {
 
         $class = $x % 2 ? $section_class[rand(0, 1)] : "uk-section-default";
         $class2 = $x % 2 ? "uk-flex-first@m" : "";
         $button_class = $x % 2 ? "uk-button-default" : "uk-button-secondary";
     ?>
-        <section class="uk-section uk-section-large <?= $class ?>" id="section_<?= $x + 1 ?>">
+        <section class="uk-section uk-section-large <?= $class ?>" id="section_<?= $x + 1 ?>" id="section-<?=$i?>">
             <div class="uk-container uk-container-small" data-depth="0.2">
                 <div class="uk-grid uk-child-width-1-2@m uk-margin-large uk-grid-large" uk-grid>
                     <div class="">
