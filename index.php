@@ -40,7 +40,7 @@ if (isset($_POST["send_message"])) {
     <script src="js/uikit-icons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-    <title>Xpeed Technologies - Full stack software development company(NodeJS, AngularJS, ReactJS, ExpressJS, MySQL, MongoDB and so on.)</title>
+    <title>Xpeed Technologies: Custom Web and App Development Services for Your Business.</title>
 </head>
 
 <body class="body">
