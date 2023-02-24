@@ -1,5 +1,15 @@
 {
-    "require": {
-        "fzaninotto/faker": "^1.5"
-    }
+    "name": "xpeed/website",
+    "autoload": {
+        "psr-4": {
+            "Xpeed\\Website\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nafish Ahmed",
+            "email": "nafish.ahmed.dev@gmail.com"
+        }
+    ],
+    "require": {}
 }
