@@ -391,30 +391,6 @@ if (isset($_POST["send_message"])) {
 
         }
     </script>
-
-
-    <div id="pointer"></div>
-    <div id="pointer_dot"></div>
-    <script>
-        document.body.onmousemove = function(ev) {
-            setTimeout(() => {
-
-
-                document.querySelector("#pointer").style.left = ev.clientX;
-                document.querySelector("#pointer").style.top = ev.clientY;
-            }, 200);
-            document.querySelector("#pointer_dot").style.left = ev.clientX;
-            document.querySelector("#pointer_dot").style.top = ev.clientY;
-        }
-        document.body.onmousedown = () => {
-            document.querySelector("#pointer").classList.add('pressed');
-        }
-        document.body.onmouseup = () => {
-            document.querySelector("#pointer").classList.remove('pressed');
-        }
-    </script>
-
-
 </body>
 
 </html>
