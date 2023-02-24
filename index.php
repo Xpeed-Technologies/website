@@ -55,7 +55,7 @@ if (isset($_POST["send_message"])) {
 
             <div class="uk-light">
 
-                <img src="assets/images/logo-light.png" style="height: 80px">
+                <img src="assets/images/logo-light.png" style="max-width: 350px">
 
 
                 <p>
