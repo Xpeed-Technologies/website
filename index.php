@@ -70,7 +70,7 @@ if (isset($_POST["send_message"])) {
             <div class="uk-margin-top">
 
 
-                <a class="uk-button uk-button-primary" onclick="document.querySelector('#section-1').scrollIntoView()">
+                <a class="uk-button uk-button-primary" onclick="document.querySelector('.section-0').scrollIntoView()">
                     Our Works
                     <span uk-icon="arrow-down"></span>
                 </a>
@@ -199,7 +199,7 @@ if (isset($_POST["send_message"])) {
         $class2 = $x % 2 ? "uk-flex-first@m" : "";
         $button_class = $x % 2 ? "uk-button-default" : "uk-button-secondary";
     ?>
-        <section class="uk-section uk-section-large <?= $class ?>" id="section_<?= $x + 1 ?>" id="section-<?=$i?>">
+        <section class="uk-section uk-section-large <?= $class ?> section-<?=$i?>" id="section_<?= $x + 1 ?>">
             <div class="uk-container uk-container-small" data-depth="0.2">
                 <div class="uk-grid uk-child-width-1-2@m uk-margin-large uk-grid-large" uk-grid>
                     <div class="">
