@@ -6,13 +6,13 @@ global $conn, $system_techs;
 $faker = Faker\Factory::create();
 $message = [];
 if (isset($_POST["send_message"])) {
-    $to_email = "hello@nafish.me";
+    $to_email = "hello@xpeed.co.in";
     $subject = "Enquiry from website";
     $message = "From:" . $_POST["name"] . "\n" .
         "Email:" . $_POST["email"] . "\n" .
         "Mobile:" . $_POST["mobile"] . "\n\n" .
         $_POST["message"];
-    $headers = 'From: hello@nafish.me';
+    $headers = 'From: hello@xpeed.co.in';
     if (mail($to_email, $subject, $message, $headers)) {
         $message = [
             "error" => 0,
@@ -59,12 +59,10 @@ if (isset($_POST["send_message"])) {
 
 
                 <p>
-                    I'm Nafish, a 23-year-old Indian Freelance Web developer. I'm a weird guy who likes making weird things with web technologies.
-                    I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
-                    When not working or futzing around with code, I study how to escape from University. Actually for hire.
+                We are dedicated to creating innovative and user-friendly digital solutions for businesses and organizations of all sizes. With a team of highly skilled developers and designers, we specialize in developing customized websites, e-commerce platforms, and mobile applications that enhance our clients' online presence and help them achieve their goals. We strive to deliver exceptional service and build lasting relationships with our clients, providing ongoing support and maintenance to ensure their digital products remain current and effective. Whether you're looking to revamp your existing website or launch a new mobile app, we're here to help you bring your vision to life.
                 </p>
                 <p>Got any questions?
-                    <a class="uk-button uk-button-text uk-text-primary" onclick="document.querySelector('#contact').scrollIntoView()"> Contact me.</a>
+                    <a class="uk-button uk-button-text uk-text-primary" onclick="document.querySelector('#contact').scrollIntoView()"> Contact us.</a>
                 </p>
             </div>
             <div class="uk-margin-top">
@@ -299,17 +297,12 @@ if (isset($_POST["send_message"])) {
                 <em class="devicon-codeigniter-plain colored"></em>
                 <em class="devicon-nodejs-plain colored"></em>
             </div>
-
-            <h3 class="uk-margin-large-top">I'm available for work, get in touch</h3>
-            <a class="uk-button uk-button-text">nafish.ahmed.dev@gmail.com</a>
-
         </div>
     </section>
     <section class="uk-section uk-section-large uk-section-default" id="contact">
         <div class="uk-container uk-container-small ">
             <h3 class="uk-text-center">Let’s talk.</h3>
-            <p class="uk-text-center">New projects, freelance inquiry or even a coffee.</p>
-
+    
             <form method="post" enctype="multipart/form-data">
                 <input type="hidden" name="send_message">
                 <div class="uk-child-width-1-1" uk-grid>
@@ -362,7 +355,7 @@ if (isset($_POST["send_message"])) {
 
     <section class="uk-section-muted uk-section uk-section-secondary" style="background-color: var(--color-secondary-dark)">
         <div class="uk-container-small uk-container uk-text-center">
-            <a class="uk-button uk-button-text">hello@nafish.me &copy; Nafish Ahmed. All rights reserved.</a>
+            <a class="uk-button uk-button-text">hello@xpeed.co.in &copy; Xpeed Technologies. All rights reserved.</a>
         </div>
 
     </section>
